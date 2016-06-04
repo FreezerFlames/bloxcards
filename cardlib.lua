@@ -11051,7 +11051,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,},
 		["Effect"] = {
 			Name = "Stud",
-			Description = [[Add 3 targeting blips to your hand.]],
+			Description = "Add 3 targeting blips to your hand.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Add","Targeting Blip"},{"Add","Targeting Blip"},{"Add","Targeting Blip"}},
 			Target = "Ally",
@@ -11063,11 +11063,18 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Id"] = 415730433,
 		["Name"] = "Uberubert",
 		["Health"] = 400,
-		["Power"] = 600,
+		["Power"] = 400,
 		["Rarity"] = "Rare",
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Yellow",
 		["Cost"] = {["Red"] = 1,["Green"] = 1,["Yellow"] = 2,},
+		["Effect"] = {
+			Name = "Tycoon",
+			Description = "Add a random terrain card to your hand.",
+			["Type"] = "OnSummon",
+			["Power"] = {{"RandomAdd","Terrain"}},
+			Target = "Self",
+		},
 		["Bio"] = "Inventor of the Tycoon Genre on ROBLOX.",
 	},	
 	
@@ -11104,7 +11111,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Effect"] = {
 			Name = "Totem Magic",
 			Description = "Add three random Terrain cards to your hand. This card can't generate icons.",
-			["Type"] = "OnEnd",
+			["Type"] = "OnSummon",
 			["Power"] = {{"RandomAdd","Terrain"},{"RandomAdd","Terrain"},{"RandomAdd","Terrain"}},
 			Target = "Self",
 		},
@@ -11123,7 +11130,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,["Blue"] = 3,},
 		["Effect"] = {
 			Name = "Sudden Death",
-			Description = [[Gain 1 Red icon at the end of each of your turns.]],
+			Description = "Gain 1 Red icon at the end of each of your turns.",
 			["Type"] = "OnEnd",
 			["Power"] = {{"Red",1}},
 			Target = "Self",
@@ -11223,7 +11230,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 4,["Blue"] = 1,},
 		["Effect"] = {
 			Name = "Icon Hardscope",
-			Description = [[Gain 1 Blue icon and draw a card.]],
+			Description = "Gain 1 Blue Icon and draw a card.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Blue",1},{"Draw",1}},
 			Target = "Ally",
