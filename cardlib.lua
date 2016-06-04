@@ -1,5 +1,5 @@
 local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO 
-	["Froot Ninja"] = {
+	[" Ninja"] = {
 		["Id"] = 263342944,
 		["Name"] = "Froot Ninja",
 		["Health"] = 250,
