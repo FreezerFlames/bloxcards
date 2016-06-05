@@ -1,5 +1,5 @@
 local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO 
-	[" Ninja"] = {
+	["Froot Ninja"] = {
 		["Id"] = 263342944,
 		["Name"] = "Froot Ninja",
 		["Health"] = 250,
@@ -10533,7 +10533,7 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,["Yellow"] = 4,},
 		["Effect"] = {
 			Name = "Suversion",
-			Description = [[Target fighter's stats become 500/500.]],
+			Description = "Target fighter's stats become 500/500.",
 			["Type"] = "OnSummon",
 			["Power"] = {{"Weaken",9999},{"Strengthen",500},{"Swap",030},{"Weaken",9999},{"Strengthen",500}},
 			Target = "Target",	
