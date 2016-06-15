@@ -11068,13 +11068,6 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["AttackEffect"] = "Lightning",
 		["Color"] = "Yellow",
 		["Cost"] = {["Red"] = 1,["Green"] = 1,["Yellow"] = 2,},
-		["Effect"] = {
-			Name = "Tycoon",
-			Description = "Add a random terrain card to your hand.",
-			["Type"] = "OnSummon",
-			["Power"] = {{"RandomAdd","Terrain"}},
-			Target = "Self",
-		},
 		["Bio"] = "Inventor of the Tycoon Genre on ROBLOX.",
 	},	
 	
