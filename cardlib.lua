@@ -11123,10 +11123,10 @@ local module = { -- CARD_ID, NAME, POWER, HEALTH, RARITY,BIO
 		["Cost"] = {["Neutral"] = 2,["Blue"] = 3,},
 		["Effect"] = {
 			Name = "Sudden Death",
-			Description = "Gain 1 Red icon at the end of each of your turns.",
+			Description = "Lock all non-ninjas for one turn.",
 			["Type"] = "OnEnd",
-			["Power"] = {{"Red",1}},
-			Target = "Self",
+			["Power"] = {{"Lock",1}},
+			Target = "NotArchetype",
 		},
 		["Bio"] = "Just a ninja who is a fan of cows.",
 	},
